@@ -9,7 +9,7 @@ import cartRouter from "./routes/cart";
 dotenv.config();
 const app = express();
 
-app.use(cors({ origin: "https://ecomerce-front-end-ebon.vercel.app/" }));
+app.use(cors({ origin: "https://ecomerce-front-end-ebon.vercel.app" }));
 app.use(express.json());
 
 app.get("/", (_, res) => res.send("🚀 Backend działa!"));
